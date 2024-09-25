@@ -430,6 +430,11 @@ if html_theme == "alabaster":
         "font_family": "serif",
     }
 
+    if not html_css_files:
+      html_css_files = [
+          'fonts.css',
+      ]
+
 sys.stderr.write("Using %s theme\n" % html_theme)
 
 # Add any paths that contain custom static files (such as style sheets) here,
