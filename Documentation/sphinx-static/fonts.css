@@ -1,0 +1,88 @@
+/* SPDX-License-Identifier: GPL-2.0 */
+
+/* BEGIN @font-face definitions */
+/* Google Sans Display, regular */
+@font-face {
+	font-display: swap;
+	font-family: "Google Sans Display";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/GoogleSansDisplay-Regular.woff2") format("woff2");
+}
+/* Google Sans Display, italic */
+@font-face {
+	font-display: swap;
+	font-family: "Google Sans Display";
+	font-style: italic;
+	font-weight: 400;
+	src: url("fonts/GoogleSansDisplay-Italic.woff2") format("woff2");
+}
+/* Google Sans Display, bold */
+@font-face {
+	font-display: swap;
+	font-family: "Google Sans Display";
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/GoogleSansDisplay-Bold.woff2") format("woff2");
+}
+/* Google Sans Display, bold italic */
+@font-face {
+	font-display: swap;
+	font-family: "Google Sans Display";
+	font-style: italic;
+	font-weight: 700;
+	src: url("fonts/GoogleSansDisplay-BoldItalic.woff2") format("woff2");
+}
+/* Roboto Mono (variable) */
+@font-face {
+	font-display: swap;
+	font-family: "Roboto Mono";
+	font-style: normal;
+	font-weight: 100 900;
+	src: url("fonts/RobotoMono-VariableFont_wght.woff2") format("woff2");
+}
+/* Roboto Mono, italic (variable) */
+@font-face {
+	font-display: swap;
+	font-family: "Roboto Mono";
+	font-style: italic;
+	font-weight: 100 900;
+	src: url("fonts/RobotoMono-Italic-VariableFont_wght.woff2") format("woff2");
+}
+/* END @font-face definitions */
+/* Fallback fonts */
+:root {
+	--fallback-family-sans: ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif;
+	--fallback-family-mono: "Consolas", "Menlo", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Ubuntu Mono", monospace;
+}
+
+body {
+	font-family: "Google Sans Display", var(--fallback-family-sans);
+}
+
+div.sphinxsidebar h3, div.sphinxsidebar h4, div.sphinxsidebar input {
+	font-family: "Google Sans Display", var(--fallback-family-sans);
+}
+
+div.admonition p.admonition-title {
+	font-family: "Google Sans Display", var(--fallback-family-sans);
+}
+
+span.menuselection {
+	font-family: "Google Sans Display", var(--fallback-family-sans);
+	/* Distinguish menu text from regular prose by giving it
+	 * the same background color as inline pre-formatted text. */
+	background-color: #ecf0f3;
+	color: #222;
+}
+
+div.body h1, div.body h2, div.body h3, div.body h4, div.body h5, div.body h6 {
+	font-family: "Google Sans Display", var(--fallback-family-sans);
+}
+
+code, kbd, pre, samp, tt {
+	font-family: "Roboto Mono", var(--fallback-family-mono);
+}
+span.pre {
+	font-family: "Roboto Mono", var(--fallback-family-mono);
+}
